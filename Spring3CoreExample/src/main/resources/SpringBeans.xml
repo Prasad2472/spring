@@ -11,5 +11,8 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 		<property name="name" value="Prasad" />
 	</bean>
 	<bean id="customBeanPostProcessor" class="com.spring.core.CustomBeanPostProcessor" />
-
+	<bean id="CStartEventHandler" class="com.spring.core.listener.CStartEventHandler" />
+	<bean class="com.spring.core.listener.CStopEventHandler" id="CStopEventHandler" />
+	<bean class="com.spring.core.listener.CustomEventListener" id="customEventListener" />
+	<bean class="com.spring.core.listener.CustomEventPublisher" id="customEventPublisher" />
 </beans>
